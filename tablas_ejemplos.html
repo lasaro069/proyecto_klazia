@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prácticas</title>
+</head>
+
+<style>
+    th, td {
+        height: 20px;
+        border: 1px solid blue;
+    }
+    .tabla{
+        border: 2px solid red;
+    }
+
+    .titulo_tabla{
+        font-weight: bold;
+    }
+
+
+    .fila_titulo {
+        background-color: darkorange;
+    }
+
+    .fila_1 {
+        background-color: darkcyan;
+    }
+
+    .fila_2 {
+        background-color:violet;
+    }
+
+    .fila_3 {
+        background-color: bisque;
+    }
+
+    .color_red {
+        background-color: red;
+    }
+    .tabla_4 {
+        background-color: rgb(168, 197, 239);
+    }
+
+
+
+
+
+</style>
+
+<body>
+
+    <h1>Tablas de práctica curso Klazia</h1>
+
+    <table class="tabla">
+        <caption class="titulo_tabla">TABLA BÁSICA</caption>
+
+        <tr class="filas fila_titulo">
+            <th scope="row">Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+            <th>Columna 4</th>
+            <th>Columna 5</th>
+            <th>Columna 6</th>
+            <th>Columna 7</th>
+        </tr>
+
+        <tr class="filas fila_1">
+            <th>Fila 1</th>
+            <td>datos fila 1</td>
+            <td>datos fila 1</td>
+            <td>datos fila 1</td>
+            <td>datos fila 1</td>
+            <td>datos fila 1</td>
+            <td>datos fila 1</td>
+        </tr>
+
+        <tr class="filas fila_2">
+            <th>Fila 2</th>
+            <td>datos fila 2</td>
+            <td>datos fila 2</td>
+            <td>datos fila 2</td>
+            <td>datos fila 2</td>
+            <td>datos fila 2</td>
+            <td>datos fila 2</td>
+        </tr>
+
+        <tr class="filas fila_3">
+            <th>Fila 3</th>
+            <td>datos fila 3</td>
+            <td>datos fila 3</td>
+            <td>datos fila 3</td>
+            <td>datos fila 3</td>
+            <td>datos fila 3</td>
+            <td>datos fila 3</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table class="tabla">
+        <caption class="titulo_tabla">Agrupación de Celdas</caption>
+
+        <tr class="filas fila_titulo">
+            <th scope="row">Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+            <th>Columna 4</th>
+            <th >Columna 5</th>
+            <th>Columna 6</th>
+            <th>Columna 7</th>
+        </tr>
+
+        <tr class="filas fila_1">
+            <td colspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td class="color_red" rowspan="6">4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+
+        <tr class="filas fila_2">
+            <td>1</td>
+            <td colspan="3">2</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+
+        <tr class="filas fila_3">
+            <td>1</td>
+            <td colspan="2">2</td>
+            <td>3</td>
+            <td>4</td>
+            <td colspan="2">5</td>
+        </tr>
+
+        <tr class="filas fila_1">
+            <td rowspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td rowspan="3">5</td>
+            <td>7</td>
+        </tr>
+
+        <tr class="filas fila_2">
+            <td>1</td>
+            <td rowspan="2">2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+
+        <tr class="filas fila_3">
+            <td colspan="2">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table class="tabla_1">
+        <caption class="titulo_tabla">Tabla 1 de Klazia</caption>
+
+        <tr>
+            <th></th>
+            <th>Día 1</th>
+            <th>Día 2</th>
+            <th>Día 3</th>
+            <th>Día 4</th>
+        </tr>
+
+        <tr>
+            <th>Mike (lastimado)</th>
+            <td colspan="3">0 km</td>
+            <td>4 km</td>
+        </tr>
+
+        <tr>
+            <th>Susan</th>
+            <td>23 km</td>
+            <td>18 km</td>
+            <td>19 km</td>
+            <td>15 km</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table class="tabla_4">
+        <caption class="titulo_tabla">Tabla 2 de Klazia</caption>
+        <tr>
+            <th></th>
+            <th>Básico</th>
+            <th>Completo</th>
+        </tr>
+        <tr>
+            <th>Instalacion</th>
+            <td rowspan="2">Gratis!!</td>
+            <td>$4000</td>
+        </tr>
+        <tr>
+            <th>Primer Año</th>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <th>Segundo Año</th>
+            <td>$900</td>
+            <td>$3000</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table class="tabla_4" border="2">
+        <caption class="titulo_tabla">Agrupación de filas</caption>
+
+        <thead>
+            <tr>
+                <th></th>
+                <th colspan="2">Anthony</th>
+                <th colspan="2">Lione</th>
+            </tr>
+            <tr>
+                <th scope="col">Fecha</th>
+                <th>Entrada</th>
+                <th>Salida</th>
+                <th>Entrada</th>
+                <th>Salida</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>15/07</th>
+                <td>$20000</td>
+                <td>$5000</td>
+                <td>$0.0</td>
+                <td>$0.0</td>
+            </tr>
+            <tr>
+                <th>28/07</th>
+                <td>$0.0</td>
+                <td>$10000</td>
+                <td>$10000</td>
+                <td>$0.0</td>
+            </tr>
+            <tr>
+                <th>09/08</th>
+                <td>$0.0</td>
+                <td>$5000</td>
+                <td>$0.0</td>
+                <td>$8000</td>
+            </tr>
+            <tr>
+                <th>22/08</th>
+                <td>$4000</td>
+                <td>$0.0</td>
+                <td>$0.0</td>
+                <td>$11000</td>
+            </tr>
+            <tr>
+                <th>25/08</th>
+                <td>$0.0</td>
+                <td>$2000</td>
+                <td>$0.0</td>
+                <td>$0.0</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Balance</th>
+                <td colspan="2">$2000</td>
+                <td colspan="2">$1000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    
+</body>
+</html>
