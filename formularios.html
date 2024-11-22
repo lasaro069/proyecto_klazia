@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+
+    <form action="#" method="get">
+        <h2>Etiqueta 'input'</h2>
+        <div>
+            <label for="nombre">Atributo <b><i>'text'</i></b></label>
+            <input type="text" name="nombre" size="55" maxlength="200" placeholder="Permite el ingreso de texto en esta ventana">
+            <input type="submit" value="enviar">
+        </div>
+        <br>
+
+        <div>
+            <label for="password">Atributo <b><i>'password</i></b></label>
+            <input type="password" name="password" size="50" placeholder="Permite el ingreso de datos sinque sean visibles al escribirlos">
+            <input type="submit" value="enviar">
+        </div>
+        <br>
+
+        <div>
+            <label for="date">Atributo <b><i>'date'</i></b></label>
+            <input type="date" name="date" size="30">
+            <input type="submit" value="enviar">
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Atributo <b><i>'email'</i></b></label>
+            <input type="email" name="email" size="55" placeholder="Permite el ingreso de correos electronicos" pattern="[@]">
+            <input type="image" name="image" src="/resources/images/email.png" width="48">
+        </div>
+        <br>
+
+        <div>
+            <label for="number">Aributo <b><i>'number'</i></b></label>
+            <input type="number" name="number" size="55" placeholder="Permite escribir o buscar un número con los controles">
+            <input type="submit" value="enviar">
+        </div>
+        <br>
+
+        <div>
+            <label for="tel">Aributo <b><i>'tel'</i></b></label>
+            <input type="tel" name="tel" size="55" pattern="[0-9]{10}" placeholder="Permite ingresar un número telefónico">
+            <input type="image" name="image" src="/resources/images/telefono.png" width="48">
+        </div>
+        <br>
+
+        <div>
+            <label for="image">Atributo <b><i>'image'</i></b></label>
+            <input type="text" size="55" placeholder="">
+            <input type="image" name="image" src="/resources/images/enviar.png" width="48">
+        </div>
+        <br>
+
+        <div>
+            <label for="color">Atributo <b><i>'color'</i></b></label>
+            <input type="text" placeholder="Permite seleccionar un color de la paleta de colores" size="40">
+            <input type="color" name="color">
+        </div>
+        <br>
+
+        <div>
+            <label for="file">Atributo <b><i>'file'</i></b></label>
+            <input type="text" name="file" size="25" placeholder="Permite adjuntar un archivo">
+            <input type="file" name="file">
+            <input type="submit" value="Enviar Archivo">
+        </div>
+        <br>
+
+        <div>
+            <label for="search">Atributo <b><i>'search'</i></b></label>
+            <input type="text" name="search" size="40" placeholder="Genera una ventana de búsqueda">
+            <input type="image" name="image" src="/resources/images/buscar.png" width="48">        
+        </div>
+        <br>
+
+        <div>
+            <label for="range">Atributo <b><i>'range'</i></b></label>
+            <input type="range" name="range" min="1" max="10" value="0">
+        </div>
+        <br>
+
+        <div>
+            <label for="volumen">Volumen:</label> 
+            <input type="range" list="tickmarks" min="0" max="100" step="10">
+
+            <datalist id="tickmarks">
+              <option value="0" label="0%"></option>
+              <option value="50" label="50%"></option>
+              <option value="100" label="100%"></option>
+            </datalist>        
+        </div>
+        <br>
+
+        <div>
+            <label for="radio">Atributo <b><i>'radio'</i></b></label> <br>
+            <input type="radio" name="sexo" id="hombre" value="h">
+            <label for="hombre">Hombre</label>
+            <br>
+            <input type="radio" name="sexo" id="mujer" value="h">
+            <label for="mujer">Mujer</label>
+            <br>
+            <input type="radio" name="sexo" id="indefinido" value="h">
+            <label for="indefinido">Indefinido</label>
+            <br>
+            <input type="submit" value="Enviar">
+        </div>
+        <br>
+
+        <div>
+            <label for="checkbox">Atributo <b><i>'checkbox'</i></b></label>
+            <br>
+            <label for="desplazado">Desplazado</label>
+            <input type="checkbox" name="desplazado" id="desplazado" value="desplazado">
+            <br>
+
+            <label for="campesino">Campesino</label>
+            <input type="checkbox" name="campesino" id="campesino" value="campesino">
+            <br>
+            
+            <label for="victima">Victima Violencia</label>
+            <input type="checkbox" name="victima" id="victima" value="victima">
+            <br>
+            
+            <label for="indigena">Indígena</label>
+            <input type="checkbox" name="indigena" id="indigena" value="indigena">
+            <br>
+            
+            <label for="ninguno">Ninguno</label>
+            <input type="checkbox" name="ninguno" id="ninguno" value="ninguno" checked>
+            <br>
+
+            <input type="submit" value="Enviar">
+            
+            <br>
+        </div>
+        <br>
+
+        <div>
+            <label for="boton">Etiqueta <b><i>'button'</i></b></label>
+            <button type="submit">Presiona <strong><i>Aquí</i></strong> para enviar</button>
+        </div>
+        <br>
+
+        <div>
+            <label for="volumen">Atributo <b><i>'list'</i></b></label> 
+            <input list="paises" name="browsers"/>
+
+            <datalist id="paises">
+                <option value="Colombia" label="colombia"></option>
+                <option value="Ecuador" label="ecuador"></option>
+                <option value="México" label="mexico"></option>
+                <option value="Argentina" label="argentina"></option>
+                <option value="Brasil" label="brasil"></option>
+                <option value="Panamá" label="panama"></option>
+            </datalist>
+            <input type="submit" value="Enviar">
+        </div>
+        <br>
+
+        <div>
+            <label for="select" id="select">Etiqueta <strong><i>'select'</i></strong> sencilla</label>
+            <select name="select" id="" size="2">
+                <option value="chevrolet">Chevrolet</option>
+                <option value="renault">Renault</option>
+                <option value="fiat">Fiat</option>
+                <option value="toyota">Toyota</option>
+                <option value="nissan" selected>Nissan</option>
+                <option value="suzuki">Suzuki</option>
+                <option value="hino">Hino</option>
+                <option value="ford">Ford</option>
+                <option value="subaru">Subaru</option>
+                <option value="honda">Honda</option>
+            </select>
+            <button type="submit">Presiona <strong><i>Aquí</i></strong> para Enviar</button>
+        </div>
+        <br>
+
+        <div>
+            <label for="animales" id="animales">Etiqueta <strong><i>'select'</i></strong> Animales</label>
+            <select name="animales">
+                <optgroup label="aves">
+                    <option value="canario">Canario</option>
+                    <option value="peerico">Perico</option>
+                    <option value="avestruz">Avestruz</option>
+                    <option value="paloma">Paloma</option>
+                    <option value="buho">Buho</option>
+                </optgroup>
+
+                <optgroup label="peces">
+                    <option value="ballena">Ballena</option>
+                    <option value="tiburon">Tiburón</option>
+                    <option value="salmon">Salmón</option>
+                    <option value="trucha">Trucha</option>
+                    <option value="delfin">Delfín</option>
+                </optgroup>
+
+                <optgroup label="cuadrupedos">
+                    <option value="perro" selected>Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="caballo">Caballo</option>
+                    <option value="vaca">Vaca</option>
+                    <option value="jirafa">Jirafa</option>
+                </optgroup>
+            </select>
+            <button type="submit">Presiona <strong><i>Aquí</i></strong> para enviar</button>
+        </div>
+        <br>
+
+        <div>
+            <label for="textarea">Etiqueta <strong><i>'textarea'</i></strong></label>
+            <textarea name="texto" id="texto" rows="10" cols="40" placeholder="Escribe tu biografía aquí" ></textarea>
+            <button type="submit" value="Enviar"><img src="/resources/images/send.png" alt="enviar"></button>
+        </div>
+
+
+    </form>
+
+    <br><br>
+
+
+    <form action="/procesar" method="post"> 
+        <input type="hidden" name="usuarioID" value="12345"> 
+        <input type="hidden" name="token" value="abcde12345"> 
+        <label for="nombre">Nombre:</label> 
+        <input type="text" id="nombre" name="nombre"> <input type="submit" value="Enviar"> 
+    </form>    
+    
+</body>
+</html>
