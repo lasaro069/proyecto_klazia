@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos select y datalist</title>
+</head>
+<body>
+
+    <form action="#" method="get">
+        <h2>Etiqueta 'datalist'</h2>
+
+        <div>
+            <label for="volumen">Atributo <b><i>'list'</i></b></label> 
+            <input list="paises" name="browsers"/>
+
+            <datalist id="paises">
+                <option value="Colombia" label="colombia"></option>
+                <option value="Ecuador" label="ecuador"></option>
+                <option value="México" label="mexico"></option>
+                <option value="Argentina" label="argentina"></option>
+                <option value="Brasil" label="brasil"></option>
+                <option value="Panamá" label="panama"></option>
+            </datalist>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+
+    <br><br>
+
+    <form action="#" method="get">
+        <h2>Etiqueta 'select'</h2>
+
+        <div>
+            <label for="select" id="select">Etiqueta <strong><i>'select'</i></strong> sencilla</label>
+            <select name="select" id="" size="2">
+                <option value="chevrolet">Chevrolet</option>
+                <option value="renault">Renault</option>
+                <option value="fiat">Fiat</option>
+                <option value="toyota">Toyota</option>
+                <option value="nissan" selected>Nissan</option>
+                <option value="suzuki">Suzuki</option>
+                <option value="hino">Hino</option>
+                <option value="ford">Ford</option>
+                <option value="subaru">Subaru</option>
+                <option value="honda">Honda</option>
+            </select>
+            <button type="submit">Presiona <strong><i>Aquí</i></strong> para Enviar</button>
+        </div>
+        <br>
+
+    </form>
+
+
+    <form action="#" method="get">
+        <h2>Etiqueta 'select con agrupaciones'</h2>
+
+        <div>
+            <label for="animales" id="animales">Etiqueta <strong><i>'select'</i></strong> Animales</label>
+            <select name="animales">
+                <optgroup label="aves">
+                    <option value="canario">Canario</option>
+                    <option value="perico">Perico</option>
+                    <option value="avestruz">Avestruz</option>
+                    <option value="paloma">Paloma</option>
+                    <option value="buho">Buho</option>
+                </optgroup>
+
+                <optgroup label="peces">
+                    <option value="ballena">Ballena</option>
+                    <option value="tiburon">Tiburón</option>
+                    <option value="salmon">Salmón</option>
+                    <option value="trucha">Trucha</option>
+                    <option value="delfin">Delfín</option>
+                </optgroup>
+
+                <optgroup label="cuadrupedos">
+                    <option value="perro" selected>Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="caballo">Caballo</option>
+                    <option value="vaca">Vaca</option>
+                    <option value="jirafa">Jirafa</option>
+                </optgroup>
+            </select>
+            <button type="submit">Presiona <strong><i>Aquí</i></strong> para enviar</button>
+        </div>
+        <br>
+    </form>
+
+
+
+    
+</body>
+</html>
