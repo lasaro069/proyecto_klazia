@@ -13,5 +13,163 @@
 
   <body>
 
+    <h1>Llena el siguiente formulario de Registro</h1>
+
+    <!-- Inicio del formulario -->
+    <form action="#" method="get">  
+
+      <!-- Inicio de la tabla dentro del formulario -->
+      <table border="3">
+
+        <!-- Sección Título de la tabla -->
+        <thead>
+        </thead>
+
+        <!-- Sección cuerpo de la tabla -->
+        <tbody>
+
+          <!-- sección de datos personales -->
+          <tr>
+            <th colspan="2">Datos Personales</th>
+          </tr>
+
+          <tr>
+            <th scope="col"  align="left"><label for="nombre">(*) Nombre:</label></th>
+            <td><input type="text" required placeholder="Escribe tu nombre"></td>
+          </tr>
+
+          <tr>
+            <th scope="col" align="left"><label for="apellido">(*) Apellidos:</label></th>
+            <td><input type="text" required placeholder="Escribe tus apellidos"></td>
+          </tr>
+
+          <tr>
+            <th scope="col" align="left"><label for="documento">(*) Tipo de Documento:</label></th>
+            <td>
+              <!-- 'select' para crear la lista desplegable -->
+              <select name="documento" id="">
+                <option value="cedula">Cédula de Ciudadanía</option>
+                <option value="tarjeta">Tarjeta de Identidad</option>
+                <option value="extranjeria">Cédula de Extranjería</option>
+                <option value="nit">NIT</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <th scope="col" align="left"><label for="numeroDoc">(*) Número de documento:</label></th>
+            <td><input type="text" required placeholder="Escribe tu Número"></td>
+          </tr>
+
+          <tr>
+            <th scope="col" align="left"><label for="nacimiento">Fecha de nacimiento:</label></th>
+            <td>
+              <input type="date" value="2024-11-24">
+            </td>
+          </tr>
+
+          <!-- sección para crear una cuenta  -->
+          <tr>
+            <th colspan="2">Datos para crear cuenta</th>
+          </tr>
+
+          <tr>
+            <th scope="col" align="left"><label for="email">(*) Correo Electrónico:</label></th>
+            <td><input type="email" required placeholder="Correo"></td>
+          </tr>
+
+          <tr>
+            <th scope="col" align="left"><label for="password">(*) Contraseña:</label></th>
+            <td><input type="password" required placeholder="Contraseña"></td>
+          </tr>
+
+          <tr>
+            <th scope="col" align="left"><label for="nombre">Cuéntanos de ti:</label></th>
+            <td>
+              <textarea name="sobreti" id="" cols="15" rows="2" placeholder="Háblanos de ti, no seas tímido :D"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <th colspan="2">Intereses</th>
+          </tr>
+          <tr>
+            <th scope="col">
+              <label for="intereses">Marca tus intereses</label>
+            </th>
+
+            <!-- sección listado de checkbox -->
+            <td>
+              <input type="checkbox" name="musica" id="desplazado"/>
+              <label for="desplazado">Música</label>
+              <br>
+              <input type="checkbox" name="deportes" id="deportes"/>
+              <label for="deportes">Deportes</label>
+              <br>
+              <input type="checkbox" name="cine" id="cine"/>
+              <label for="cine">Cine</label>
+              <br>
+              <input type="checkbox" name="arte" id="arte"/>
+              <label for="arte">Arte</label>
+              <br>
+              <input type="checkbox" name="videojuegos" id="videojuegos"/>
+              <label for="videojuegos">Video juegos</label>
+              <br>
+              <input type="checkbox" name="cursos" id="cursos"/>
+              <label for="cursos">Cursos</label>
+            </td>
+
+          </tr>
+
+          <tr>
+            <th colspan="2">Cómo deseas que te contactemos</th>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+
+              <!--  sección de botones 'radio' -->
+              <input type="radio" name="contacto" id="email">
+              <label for="email">Email</label>
+              
+              <input type="radio" name="contacto" id="wa">
+              <label for="wa">WhatsApp</label>
+              
+              <input type="radio" name="contacto" id="llamada">
+              <label for="llamada">Llamada</label>
+              
+              <input type="radio" name="contacto" id="casa">
+              <label for="casa">Que lleguen a mi casa</label>
+              
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" align="center">
+              <input type="checkbox" name="videojuegos" id="videojuegos"/>
+              <label for="videojuegos">Aceptas nuestros términos y condiciones</label>
+
+            </td>
+          </tr>
+
+
+        </tbody>
+
+        <!-- Sección Pie de la tabla -->
+        <tfoot>
+          <tr>
+            <td colspan="2" align="center">
+              
+              <input type="submit" value="Enviar Formulario"/> <!-- Botón enviar -->
+
+            </td>
+          </tr>
+
+        </tfoot>
+      </table>
+
+    </form>
+
+
   </body>
 </html>
