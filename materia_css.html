@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinear cajas</title>
+</head>
+<body>
+
+    Si tenemos dos cajas hijas dentro de una caja padre (
+<div class="padre">
+
+    <div> Caja 1 </div> 
+
+    <div> Caja 2 </div>
+
+</div>
+
+) y queremos mandar la primera caja hacia la izquierda y la siguiente hacia la derecha qué propiedades tenemos que ponerle a nuestro css con clase ‘padre’
+
+ 
+<style>
+/* Contenedor padre */
+.padre{
+    display: flex; /* con esta propiedad damos flexibilidad a los elementos hijos para adaptarse al espacio disponibe */
+    justify-content: space-between; /* con esta propiedad organizamos los elementos en los extremos, quedando el espacio sobrante en medio de los dos contenedores */
+    /* align-items: center; alinea los elementos en el centro de la caja */
+}
+</style>
+    
+</body>
+</html>
